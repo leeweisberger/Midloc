@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Midloc</string>
+    <string name="action_settings">Settings</string>
+    <string name="midloc">midloc</string>
+    <string name="your_zip_code">Your Zip Code</string>
+    <string name="friends_zip">Your Friend\'s Zip Code</string>
+    <string name="navigate">Navigate!</string>
+    <string name="price">Price</string>
+    <string name="rating">Rating</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="midloc_it">Midloc It!</string>
+
+    <string-array name="poi_array">
+        <item>Restaurant</item>
+        <item>Amusement Park</item>
+        <item>Aquarium</item>
+        <item>Art Gallery</item>
+        <item>Bar</item>
+        <item>Bowling Alley</item>
+        <item>Casino</item>
+        <item>Movie Theater</item>
+        <item>Night Club</item>
+        <item>Casino</item>
+        <item>Shopping Mall</item>
+        <item>Spa</item>
+        <item>Stadium</item>
+        <item>Zoo</item>
+    </string-array>
+        <string name="type_of_location">Type of Location</string>
+        <string name="friend_s_zip">Friend\'s Zip</string>
+        <string name="your_zip">Your Zip</string>
+
+</resources>

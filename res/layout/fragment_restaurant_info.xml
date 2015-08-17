@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipChildren="false"
+    android:orientation="vertical" >
+
+    <com.google.android.gms.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.5" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/restaurant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/image"
+            android:ellipsize="marquee"
+            android:hint="28sp"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/restaurant_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/restaurant_name"
+            android:layout_below="@+id/restaurant_name"
+            android:ellipsize="marquee"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/restaurant_address"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp" >
+
+            <TextView
+                android:id="@+id/ratingText"
+                style="@style/rating_price_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="48dp"
+                android:text="@string/rating" />
+
+            <TextView
+                android:id="@+id/priceText"
+                style="@style/rating_price_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingText"
+                android:text="@string/price" />
+
+            <RatingBar
+                android:id="@+id/rating"
+                style="@style/styleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ratingText" />
+
+            <RatingBar
+                android:id="@+id/price"
+                style="@style/styleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rating"
+                android:layout_alignTop="@+id/priceText"
+                android:layout_below="@+id/rating" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/midloc_it"
+            style="@style/red_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:text="@string/navigate" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="-150px" />
+    </RelativeLayout>
+
+</LinearLayout>

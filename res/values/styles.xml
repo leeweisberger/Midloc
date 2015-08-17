@@ -1,0 +1,104 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <color name="blue">#3366FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#009933</color>
+    <color name="red">#E60000</color>
+    <color name="dark_red">#B20000</color>
+    <color name="black">#000000</color>
+    <color name="gray">#EBEBEB</color>
+    <color name="dark_gray">#CFCFCF</color>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="BlueTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorBackground">@color/blue</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerItem.DropDownItem</item>
+    </style>
+
+    <style name="SpinnerItem" parent="@style/white_box">
+        <item name="android:textAppearance">@style/TextAppearanceSpinnerItem</item>
+        <item name="android:paddingLeft">22dp</item>
+        <item name="android:paddingRight">22dp</item>
+    </style>
+
+    <style name="SpinnerItem.DropDownItem" parent="@android:style/Widget.DropDownItem.Spinner">
+        <item name="android:textColor">#6699FF</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="TextAppearanceSpinnerItem" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#6699FF</item>
+    </style>
+
+    <style name="ActionBarButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="ActionBarTitle" parent="@style/ActionBarButton">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="red_button">
+        <item name="android:background">@drawable/button_custom</item>
+        <item name="android:paddingLeft">36dp</item>
+        <item name="android:paddingRight">36dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="styleName">
+        <item name="android:isIndicator">true</item>
+        <item name="android:numStars">4</item>
+        <item name="android:progressDrawable">@drawable/ratingbar_custom</item>
+    </style>
+
+    <style name="rating_price_text_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="zip_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="input_zip" parent="@style/white_box">
+        <item name="android:inputType">textNoSuggestions|number</item>
+        <item name="android:maxLength">13</item>
+    </style>
+
+    <style name="white_box">
+        <item name="android:layout_width">175dp</item>
+        <item name="android:background">@drawable/edit_text_custom</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingTop">6dp</item>
+    </style>
+
+</resources>

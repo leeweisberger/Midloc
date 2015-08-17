@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:clipChildren="false"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".75"
+        android:clipToPadding="false" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="52dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/midloc"
+            android:textColor="@color/white"
+            android:textSize="64sp" />
+
+        <EditText
+            android:id="@+id/enter_your_location"
+            style="@style/input_zip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/your_zip" />
+
+        <EditText
+            android:id="@+id/enter_their_location"
+            style="@style/input_zip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enter_your_location"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            android:hint="@string/friend_s_zip" />
+
+        <ToggleButton
+            android:id="@+id/toggle_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/enter_your_location"
+            android:layout_marginLeft="12dp"
+            android:layout_toEndOf="@+id/enter_your_location"
+            android:layout_toRightOf="@+id/enter_your_location"
+            android:background="@android:color/transparent"
+            android:button="@drawable/toggle_custom"
+            android:textOff=""
+            android:textOn="" />
+
+        <Spinner
+            android:id="@+id/spinner_poi"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enter_their_location"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edit_text_custom"
+            android:entries="@array/poi_array"
+            android:gravity="center_horizontal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".25"
+        android:background="@color/white" >
+
+        <Button
+            android:id="@+id/search_button"
+            style="@style/red_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-25dp"
+            android:text="@string/midloc_it" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/powered_by_google_light" />
+    </RelativeLayout>
+
+</LinearLayout>

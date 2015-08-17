@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Midloc="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_bar_reset"
+        Midloc:showAsAction="always"
+        android:orderInCategory="10"
+         style="@style/ActionBarButton"
+        android:title="Reset"/>
+
+</menu>
